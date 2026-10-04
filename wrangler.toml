@@ -1,0 +1,6 @@
+name = "wisdom-painting-pages"
+compatibility_date = "2026-10-05"
+
+[assets]
+directory = "."
+exclude = ["node_modules/**", ".git/**", ".github/**", ".vscode/**", "*.log", "scripts/**", ".DS_Store", "**/.DS_Store"]
