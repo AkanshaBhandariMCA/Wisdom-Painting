@@ -1,0 +1,15 @@
+{
+  "reviews": [
+    {
+      "id": "r-1791143708593",
+      "verified": true,
+      "name": "Akansha Bhandari",
+      "email": "akanshab652@gmail.com",
+      "rating": 5,
+      "message": "great",
+      "location": "",
+      "source": "Website Form",
+      "submittedAt": "2026-10-04T19:55:08.593Z"
+    }
+  ]
+}

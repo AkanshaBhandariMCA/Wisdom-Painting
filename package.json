@@ -1,0 +1,10 @@
+{
+  "name": "wisdom-painting-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Frontend-only painting website for Wisdom Painting",
+  "scripts": {
+    "start": "node server.js",
+    "test": "python3 scripts/validate_site.py"
+  }
+}
