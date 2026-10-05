@@ -4,3 +4,7 @@ compatibility_date = "2026-10-05"
 [assets]
 directory = "."
 exclude = ["node_modules/**", ".git/**", ".github/**", ".vscode/**", "*.log", "scripts/**", ".DS_Store", "**/.DS_Store"]
+
+[[kv_namespaces]]
+binding = "REVIEWS_KV"
+id = "06f3ba3e8150469c8bd7fdd492948904"

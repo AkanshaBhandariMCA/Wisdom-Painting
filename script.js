@@ -165,6 +165,23 @@ if (menuButton && nav) {
   menuButton.addEventListener('click', () => {
     const isOpen = nav.classList.toggle('open');
     menuButton.setAttribute('aria-expanded', String(isOpen));
+    document.body.classList.toggle('nav-open', isOpen);
+  });
+
+  nav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('nav-open');
+    });
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      nav.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('nav-open');
+    }
   });
 }
 
@@ -195,6 +212,16 @@ submenuToggles.forEach((toggle) => {
 document.addEventListener('click', (event) => {
   if (!(event.target instanceof Node)) {
     return;
+  }
+
+  if (menuButton && nav) {
+    const clickedMenuButton = menuButton.contains(event.target);
+    const clickedNav = nav.contains(event.target);
+    if (!clickedMenuButton && !clickedNav) {
+      nav.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('nav-open');
+    }
   }
 
   document.querySelectorAll('.has-submenu').forEach((item) => {
@@ -228,8 +255,9 @@ if ('IntersectionObserver' in window && revealTargets.length > 0) {
     }
   );
 
-  revealTargets.forEach((target) => {
+  revealTargets.forEach((target, index) => {
     target.classList.add('reveal');
+    target.style.setProperty('--reveal-delay', `${Math.min(index * 70, 350)}ms`);
     observer.observe(target);
   });
 }
