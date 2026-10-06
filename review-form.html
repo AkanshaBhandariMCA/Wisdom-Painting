@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Share a Review | Wisdom Painting</title>
+  <meta name="description" content="Share your experience with Wisdom Painting. Submit a customer review." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Share a Review | Wisdom Painting" />
+  <meta property="og:description" content="Worked with Wisdom Painting? Share your feedback to help future customers." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_CA" />
+  <meta property="og:url" content="https://www.wisdompainting.ca/review-form" />
+  <link rel="canonical" href="https://www.wisdompainting.ca/review-form" />
+  <link rel="stylesheet" href="styles.css?v=20261006e" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="top-call">
+    <div class="container top-call-inner">
+      <span>SHARE YOUR REVIEW</span>
+      <a href="tel:+14372991782">Call (437) 299-1782</a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Wisdom Painting home">
+  <img class="logo-image" src="assets/images/logo.png?v=20261006" alt="Wisdom Painting logo" loading="eager" decoding="async" onerror="this.src='assets/images/placeholder.svg'" />
+      </a>
+
+      <a class="call-pill" href="tel:+14372991782">Call (437) 299-1782</a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+
+      <nav id="primary-nav" class="nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <div class="nav-item has-submenu">
+          <a href="services.html">Services</a>
+          <button class="submenu-toggle" aria-expanded="false" aria-label="Toggle services submenu">▾</button>
+          <div class="submenu" role="menu" aria-label="Services submenu">
+            <a role="menuitem" href="residential.html">Residential</a>
+            <a role="menuitem" href="commercial.html">Commercial</a>
+          </div>
+        </div>
+        <a href="contact.html">Contact</a>
+        <a class="active" href="review-form.html">Review</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Customer Review</p>
+        <h1>Share your experience</h1>
+        <p>Already worked with us? Your feedback helps future customers choose with confidence.</p>
+      </div>
+    </section>
+
+    <section class="section contact-forms-section">
+      <div class="container">
+        <div class="narrow-content" style="margin: 0 auto;">
+          <article class="form-panel">
+            <div class="form-panel-head">
+              <span class="form-badge">Customer Review</span>
+              <h3>Share a Review</h3>
+              <p>Reviews are moderated before they appear publicly.</p>
+            </div>
+
+            <form id="review-form" class="review-form" data-provider="local">
+              <div class="form-grid">
+                <label>
+                  Name
+                  <input type="text" name="name" required placeholder="Your name" autocomplete="name" />
+                </label>
+
+                <label>
+                  Email
+                  <input type="email" name="email" required placeholder="you@example.com" autocomplete="email" />
+                </label>
+              </div>
+
+              <div class="form-grid">
+                <label>
+                  Rating
+                  <select name="rating" required>
+                    <option value="">Select rating</option>
+                    <option value="5">★★★★★ (5)</option>
+                    <option value="4">★★★★☆ (4)</option>
+                    <option value="3">★★★☆☆ (3)</option>
+                    <option value="2">★★☆☆☆ (2)</option>
+                    <option value="1">★☆☆☆☆ (1)</option>
+                  </select>
+                </label>
+
+                <label>
+                  Location (optional)
+                  <input type="text" name="location" placeholder="City or area" autocomplete="address-level2" />
+                </label>
+              </div>
+
+              <label>
+                Your Review
+                <textarea name="message" rows="4" required placeholder="Tell others about your experience"></textarea>
+              </label>
+
+              <button type="submit" class="btn btn-primary">Submit Review</button>
+              <p id="review-form-status" class="form-status" aria-live="polite"></p>
+              <p class="form-help">Want to read other reviews? <a href="reviews.html">View all verified reviews</a>.</p>
+            </form>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-band" aria-label="Quick contact details">
+      <div class="container contact-band-grid">
+        <div>
+          <h3>Call Us</h3>
+          <p><a href="tel:+14372991782">(437) 299-1782</a></p>
+        </div>
+        <div>
+          <h3>Email Us</h3>
+          <p><a href="mailto:Paintingwisdom9@gmail.com">Paintingwisdom9@gmail.com</a></p>
+        </div>
+        <div>
+          <h3>Hours</h3>
+          <p>Mon - Fri: 7am - 5pm</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h2>Over 10 years experience</h2>
+        <p>Serving London, Sarnia, Woodstock, Kitchener, and Guelph.</p>
+      </div>
+      <div>
+        <h2>Our services</h2>
+        <ul class="footer-list">
+          <li>Residential</li>
+          <li>Interior</li>
+          <li>Exterior</li>
+          <li>Commercial</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Location</h2>
+        <p>Wisdom Painting</p>
+        <p>London, ON, Canada</p>
+      </div>
+    </div>
+    <p class="copyright">© <span id="year"></span> Wisdom Painting. All rights reserved.</p>
+  </footer>
+
+  <a class="floating-call" href="tel:+14372991782" aria-label="Call Wisdom Painting now">Call Now</a>
+
+  <script src="script.js"></script>
+</body>
+</html>

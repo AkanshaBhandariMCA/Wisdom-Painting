@@ -12,7 +12,7 @@
   <meta property="og:locale" content="en_CA" />
   <meta property="og:url" content="https://www.wisdompainting.ca/" />
   <link rel="canonical" href="https://www.wisdompainting.ca/" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=20261006e" />
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -20,18 +20,17 @@
   <div class="top-call">
     <div class="container top-call-inner">
       <span>Serving London, ON and nearby communities</span>
-      <a href="tel:+15195551234">Call (519) 555-1234</a>
+      <a href="tel:+14372991782">Call (437) 299-1782</a>
     </div>
   </div>
 
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo" href="index.html" aria-label="Wisdom Painting home">
-        <span class="logo-mark">WP</span>
-        <span class="logo-text">Wisdom Painting</span>
+  <img class="logo-image" src="assets/images/logo.png?v=20261006" alt="Wisdom Painting logo" loading="eager" decoding="async" onerror="this.src='assets/images/placeholder.svg'" />
       </a>
 
-      <a class="call-pill" href="tel:+15195551234">Call (519) 555-1234</a>
+  <a class="call-pill" href="tel:+14372991782">Call (437) 299-1782</a>
 
       <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
 
@@ -46,6 +45,7 @@
           </div>
         </div>
         <a href="contact.html">Contact</a>
+        <a href="review-form.html">Review</a>
       </nav>
     </div>
   </header>
@@ -60,8 +60,8 @@
           every property a fresh, lasting finish.
         </p>
         <div class="hero-cta">
-          <a class="btn btn-primary" href="tel:+15195551234">Call (519) 555-1234</a>
-          <a class="btn btn-secondary" href="contact.html">Request a Quote</a>
+          <a class="btn btn-primary" href="tel:+14372991782">Call (437) 299-1782</a>
+          <a class="btn btn-secondary" href="#query">Request a Quote</a>
         </div>
       </div>
     </section>
@@ -227,15 +227,81 @@
       </div>
     </section>
 
+    <section class="section contact-forms-section" id="query">
+      <div class="container">
+        <div class="contact-forms-header centered">
+          <p class="eyebrow">Project Query</p>
+          <h2>Need walls, rooms, or furniture painted?</h2>
+          <p class="section-intro">Tell us what needs painting — interior or exterior walls, ceilings, trim, cabinets, or furniture — and we’ll reply quickly with a quote and next steps.</p>
+        </div>
+
+        <div class="narrow-content" style="margin: 0 auto;">
+          <article class="form-panel">
+            <form
+              id="query-form"
+              class="review-form"
+              action="https://formsubmit.co/Paintingwisdom9@gmail.com"
+              method="POST"
+              data-ajax-endpoint="https://formsubmit.co/ajax/Paintingwisdom9@gmail.com"
+              target="query-submit-frame"
+            >
+              <input type="hidden" name="_subject" value="New Project Query - Wisdom Painting" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
+
+              <div class="form-grid">
+                <label>
+                  Name
+                  <input type="text" name="name" required placeholder="Your name" autocomplete="name" />
+                </label>
+                <label>
+                  Email
+                  <input type="email" name="email" required placeholder="you@example.com" autocomplete="email" />
+                </label>
+              </div>
+
+              <div class="form-grid">
+                <label>
+                  Phone
+                  <input type="tel" name="phone" placeholder="Your phone number" autocomplete="tel" />
+                </label>
+                <label>
+                  Service Type
+                  <select name="service" required>
+                    <option value="">Select service</option>
+                    <option value="Residential Painting">Residential Painting</option>
+                    <option value="Commercial Painting">Commercial Painting</option>
+                    <option value="Interior Painting">Interior Painting</option>
+                    <option value="Exterior Painting">Exterior Painting</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </label>
+              </div>
+
+              <label>
+                Your Query
+                <textarea name="message" rows="5" required placeholder="Please describe your project, location, and timeline"></textarea>
+              </label>
+
+              <button type="submit" class="btn btn-primary">Submit Query</button>
+              <p id="query-form-status" class="form-status" aria-live="polite"></p>
+              <p class="form-help">Prefer direct contact? Call <a href="tel:+14372991782">(437) 299-1782</a> anytime during business hours.</p>
+            </form>
+            <iframe name="query-submit-frame" title="Hidden query submit target" style="display: none;"></iframe>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="contact-band" aria-label="Quick contact details">
       <div class="container contact-band-grid">
         <div>
           <h3>Call Us</h3>
-          <p><a href="tel:+15195551234">(519) 555-1234</a></p>
+          <p><a href="tel:+14372991782">(437) 299-1782</a></p>
         </div>
         <div>
           <h3>Email Us</h3>
-          <p><a href="mailto:hello@wisdompainting.ca">hello@wisdompainting.ca</a></p>
+          <p><a href="mailto:Paintingwisdom9@gmail.com">Paintingwisdom9@gmail.com</a></p>
         </div>
         <div>
           <h3>Hours</h3>
@@ -251,8 +317,8 @@
           <p>Contact Wisdom Painting today for a straightforward quote.</p>
         </div>
         <div class="stack-buttons">
-          <a class="btn btn-primary" href="tel:+15195551234">Call (519) 555-1234</a>
-          <a class="btn btn-secondary" href="mailto:hello@wisdompainting.ca">Email Us</a>
+          <a class="btn btn-primary" href="tel:+14372991782">Call (437) 299-1782</a>
+          <a class="btn btn-secondary" href="mailto:Paintingwisdom9@gmail.com">Email Us</a>
         </div>
       </div>
     </section>
@@ -282,7 +348,7 @@
     <p class="copyright">© <span id="year"></span> Wisdom Painting. All rights reserved.</p>
   </footer>
 
-  <a class="floating-call" href="tel:+15195551234" aria-label="Call Wisdom Painting now">Call Now</a>
+  <a class="floating-call" href="tel:+14372991782" aria-label="Call Wisdom Painting now">Call Now</a>
 
   <script src="script.js"></script>
 </body>
