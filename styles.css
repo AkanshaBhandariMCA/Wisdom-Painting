@@ -113,7 +113,7 @@ a:hover {
 }
 
 .logo-image {
-  width: 5.31rem;
+  width: 5.2rem;
   height: auto;
   object-fit: contain;
   object-position: center;
@@ -1019,15 +1019,15 @@ h3 {
 
   .logo {
     grid-column: 1 / -1;
-    justify-self: start;
+    justify-self: center;
     margin-bottom: 0.15rem;
-    margin-left: 25%;
+    margin-left: 0;
     width: auto;
     height: auto;
   }
 
   .logo-image {
-    width: 4.4rem;
+    width: 4.5rem;
     height: auto;
     transform: none;
     object-position: center;
