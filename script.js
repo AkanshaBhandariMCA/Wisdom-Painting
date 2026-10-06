@@ -52,7 +52,7 @@ const renderEmptyState = (container) => {
   container.innerHTML = '';
   const empty = document.createElement('article');
   empty.className = 'review-empty';
-  empty.innerHTML = '<h3>No verified reviews published yet</h3><p>Add real verified reviews in <code>data/reviews.json</code> to display them here.</p>';
+  empty.innerHTML = '<h3>No verified reviews published yet</h3>';
   container.appendChild(empty);
 };
 
