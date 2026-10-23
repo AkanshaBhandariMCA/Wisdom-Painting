@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.wisdompainting.ca/sitemap.xml
+Sitemap: https://www.wisdom-painting.com/sitemap.xml
