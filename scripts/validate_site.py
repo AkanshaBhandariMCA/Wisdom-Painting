@@ -8,13 +8,11 @@ required_files = [
     "services.html",
     "residential.html",
     "commercial.html",
-    "reviews.html",
     "contact.html",
+    "query.html",
     "styles.css",
     "script.js",
     "server.js",
-    "functions/api/reviews.js",
-    "data/reviews.json",
     "robots.txt",
     "sitemap.xml",
     "README.md",
@@ -22,16 +20,15 @@ required_files = [
 ]
 
 required_content = {
-    "index.html": ["Wisdom Painting", "10 years", "Client Reviews"],
+    "index.html": ["Wisdom Painting", "10 years", "Project Query"],
     "services.html": ["OUR SERVICES", "Residential", "Commercial"],
     "residential.html": ["Residential", "Interiors", "Exteriors"],
     "commercial.html": ["Commercial", "Commercial clients include", "retail"],
-    "reviews.html": ["All Verified Reviews", "verified reviews"],
     "contact.html": ["CONTACT US TODAY", "(437) 299-1782", "London, ON, Canada"],
-    "styles.css": ["--accent", ".feature-band", ".contact-band", ".floating-call", ".submenu", ".review-slider"],
-    "script.js": ["loadVerifiedReviews", "data-review-slider", "/api/reviews"],
-    "server.js": ["/api/reviews", "reviews.json", "POST"],
-    "functions/api/reviews.js": ["REVIEWS_KV", "onRequestPost", "onRequestGet"],
+    "query.html": ["Project Query", "Send your query", "Submit Query"],
+    "styles.css": ["--accent", ".feature-band", ".contact-band", ".floating-call", ".submenu"],
+    "script.js": ["menuButton", "query-form", "IntersectionObserver"],
+    "server.js": ["createServer", "serveStatic", "Cache-Control"],
 }
 
 
